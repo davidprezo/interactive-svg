@@ -1,0 +1,22 @@
+#bear:hover #left-ear,
+#bear:hover #right-ear {
+  transform: translateY(-10px);
+  transform-origin: center ccenter;
+  transition: all .5s linear;
+}
+
+#left-eye,
+#right-eye {
+  animation: eyes 1s linear infinite alternate;
+}
+
+@keyframes eyes {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-5px);
+  }
+}
